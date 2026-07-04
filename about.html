@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연남 가라오케 찐후기 | 연남동 가라오케 정보</title>
+    <meta name="description" content="연남 가라오케 찐후기 정보 페이지. 연남동 가라오케 위치, 가격, 시스템, 추천 포인트까지 브로가 다 알려준다. 010-6279-0862">
+    <meta name="keywords" content="연남 가라오케, 연남동 가라오케, 연남 가라오케 찐후기, 연남 노래방, 연남동 노래방 추천, 홍대 가라오케, 연남 술집, 연남 데이트">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-noir-gold">
+    <link rel="canonical" href="https://t3b07-yn-karaoke-real2-2.vercel.app/info">
+    <!-- OG 메타 -->
+    <meta property="og:title" content="연남 가라오케 찐후기 | 연남동 가라오케 완전 정보">
+    <meta property="og:description" content="연남동 골목에 숨은 보석 같은 가라오케, 위치부터 가격까지 브로가 다 파헤쳤다.">
+    <meta property="og:image" content="https://t3b07-yn-karaoke-real2-2.vercel.app/og-info.jpg">
+    <meta property="og:url" content="https://t3b07-yn-karaoke-real2-2.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="연남 가라오케 찐후기">
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #f5f5f0;
+            line-height: 1.8;
+            letter-spacing: 0.02em;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Layout */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        /* Typography */
+        h1, h2, h3 {
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        h1 {
+            font-size: 2.2rem;
+            line-height: 1.2;
+            margin-bottom: 1.2rem;
+            color: #d4af37;
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.15);
+        }
+        h2 {
+            font-size: 1.6rem;
+            line-height: 1.3;
+            margin: 2.4rem 0 1rem;
+            color: #e8d5a3;
+            border-left: 3px solid #d4af37;
+            padding-left: 16px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            line-height: 1.4;
+            margin: 1.6rem 0 0.8rem;
+            color: #d4af37;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            color: #d4d4c8;
+        }
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-bottom: 1px solid transparent;
+        }
+        a:hover {
+            color: #f0e0a0;
+            border-bottom-color: #d4af37;
+        }
+        /* Drop Cap */
+        .drop-cap:first-letter {
+            font-size: 3.6rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 10px;
+            color: #d4af37;
+            font-weight: 700;
+            font-family: 'Georgia', serif;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+        }
+        /* Hero Section */
+        .hero {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 50%, #0d0d0d 100%);
+            padding: 80px 24px 60px;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(212, 175, 55, 0.06) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+            opacity: 0.3;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.15rem;
+            color: #b0a890;
+            max-width: 560px;
+            margin: 0 auto;
+        }
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            padding: 0 24px;
+        }
+        .nav-inner {
+            max-width: 720px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+        .nav-logo {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #d4af37;
+            letter-spacing: -0.02em;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-links a {
+            font-size: 0.9rem;
+            color: #b0a890;
+            border: none;
+            padding: 4px 0;
+            position: relative;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #d4af37;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        .nav-links a:hover::after {
+            transform: scaleX(1);
+        }
+        .nav-links a:hover {
+            color: #f5f5f0;
+        }
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+        .hamburger span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: #d4af37;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+        }
+        .tel-link {
+            display: inline-block;
+            padding: 8px 24px;
+            background: linear-gradient(135deg, #d4af37, #b8962e);
+            color: #0a0a0a;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .tel-link:hover {
+            background: linear-gradient(135deg, #f0e0a0, #d4af37);
+            color: #0a0a0a;
+            transform: scale(1.02);
+        }
+        /* Card */
+        .card {
+            background: linear-gradient(145deg, #141414, #1a1a1a);
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            border-radius: 16px;
+            padding: 28px;
+            margin: 24px 0;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            border-color: rgba(212, 175, 55, 0.25);
+            box-shadow: 0 8px 32px rgba(212, 175, 55, 0.06);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin: 20px 0;
+        }
+        .info-item {
+            background: rgba(212, 175, 55, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .info-item .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #8a7a60;
+            margin-bottom: 6px;
+        }
+        .info-item .value {
+            font-size: 1.05rem;
+            color: #f5f5f0;
+            font-weight: 500;
+        }
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid rgba(212, 175, 55, 0.08);
+            padding: 20px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #e8d5a3;
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+        .faq-answer {
+            color: #b0a890;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        /* Footer */
+        footer {
+            border-top: 1px solid rgba(212, 175, 55, 0.08);
+            padding: 40px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+        footer p {
+            font-size: 0.85rem;
+            color: #6a5a40;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero {
+                min-height: 60vh;
+                padding: 70px 20px 50px;
+            }
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background: rgba(10, 10, 10, 0.98);
+                flex-direction: column;
+                padding: 20px 24px;
+                gap: 16px;
+                border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-logo">연남 가라오케 찐후기</div>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/review">후기</a></li>
+                <li><a href="/tip">꿀팁</a></li>
+                <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h1>연남 가라오케 찐정보</h1>
+            <p class="drop-cap">브로가 직접 발로 뛰어서 알게 된 연남동 가라오케의 모든 것. 위치부터 가격, 시스템까지 다 까발린다.</p>
+        </div>
+    </section>
+
+    <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+        <h2>📍 위치 & 분위기</h2>
+        <p class="drop-cap">연남동 메인 골목에서 살짝 들어가면 나오는 이 곳, 진짜 숨은 보석이야. 간판도 크게 안 내걸어서 처음엔 지나칠 뻔했는데, 문 열자마자 감탄사 나오더라. 인테리어가 묵직하면서도 세련됐어. 골드 톤 조명이랑 앤틱한 소품들이 분위기 제대로 살려줌. 데이트 코스로도 완전 강추야.</p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="label">주소</div>
+                <div class="value">서울 마포구 연남동 227-20 B1</div>
+            </div>
+            <div class="info-item">
+                <div class="label">영업시간</div>
+                <div class="value">매일 16:00 ~ 익일 05:00</div>
+            </div>
+            <div class="info-item">
+                <div class="label">연락처</div>
+                <div class="value"><a href="tel:010-6279-0862">010-6279-0862</a></div>
+            </div>
+            <div class="info-item">
+                <div class="label">주차</div>
+                <div class="value">연남동 공영주차장 이용 (도보 3분)</div>
+            </div>
+        </div>
+
+        <h2>💰 가격 & 시스템</h2>
+        <p>솔직히 말해서, 이 퀄리티에 이 가격이면 혜자 수준이야. 방마다 음향 시스템이 진짜 좋아서 작은 방에서도 라이브 클럽 온 느낌이 들어. 마이크도 슈어꺼 쓰더라구. 안주도 괜찮은 편이고, 음료는 가성비 괜찮아.</p>
+
+        <div class="card">
+            <h3>💎 브로 추천 패키지</h3>
+            <p>2시간 기준 주류 + 안주 포함해서 1인당 3만원대면 즐길 수 있어. 친구 4명이서 가면 방도 널찍하고 진짜 노는 맛 나. 금요일 밤에 가면 사람들 많으니까 전화하고 가는 게 좋아. <a href="tel:010-6279-0862">010-6279-0862</a>로 미리 콜 하고 가셈.</p>
+        </div>
+
+        <h2>🎤 룸 & 시설</h2>
+        <p>방이 6개 정도 있는데, 각각 콘셉트가 달라. 내가 제일 좋아하는 건 골드룸이야. 벽지가 앤틱한 패턴이고 조명이 따뜻해서 사진 찍기도 좋아. 블루투스 스피커도 연결할 수 있어서 내 플레이리스트 틀어놓고 프리게임 하기도 했지. 화장실도 깔끔하고, 공용 공간에 포토존도 있어서 인생샷 건지기 좋아.</p>
+
+        <div class="card">
+            <h3>✨ 이런 분들께 추천</h3>
+            <p>✔ 연남동에서 특별한 데이트 하고 싶은 커플<br>
+            ✔ 홍대 가라오케는 질렸고 새로운 곳 찾는 브로들<br>
+            ✔ 분위기 좋은 곳에서 오붓하게 술 한잔 하면서 노래 부르고 싶은 분들<br>
+            ✔ 인스타에 올릴 예쁜 사진도 건지고 싶은 분들</p>
+        </div>
+
+        <h2>❓ 자주 묻는 질문</h2>
+        <div class="faq-item">
+            <div class="faq-question">예약
+</body>
+</html>
